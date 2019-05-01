@@ -20,14 +20,17 @@ public class TwoSum {
 		int posOne = 0,posTwo = 0;
 
 		int[] sortedNums = nums.clone();
-		Arrays.sort(sortedNums);
+		Arrays.sort(sortedNums); //将这串数字从小到大排序
 		
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length; i++) { //将第一个数和最后一个数相加，然后和给定的数进行判断
 			if ((sortedNums[start] + sortedNums[end]) < target) {
+				//如果小于给定的数，就取比小的数稍大的数，来和最后一位相加
 				start++;
 			} else if ((sortedNums[start] + sortedNums[end]) > target) {
+				//如果大于给定的数，就取比大的数稍小的数，来和第一位相加
 				end--;
 			} else {
+				//如果等于给定的数，那就直接返回
 				startNum = sortedNums[start];
 				endNum = sortedNums[end];
 				break;
