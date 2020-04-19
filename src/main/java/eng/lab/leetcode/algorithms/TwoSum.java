@@ -3,11 +3,9 @@ package eng.lab.leetcode.algorithms;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/two-sum/
- * 
- * @author wenxl
- * @createTime 2019/04/21
- *
+ * @Author: Wen-Xueliang
+ * @Date: Created in 2020/4/19 14:30
+ * @Description: https://leetcode.com/problems/two-sum/
  */
 public class TwoSum {
 	public int[] twoSum(int[] nums, int target) {
